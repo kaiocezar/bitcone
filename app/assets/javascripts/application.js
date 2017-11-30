@@ -11,10 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require rails-ujs
+//= require jquery_ujs
 //= require materialize
 //= require jQuery-Mask-Plugin
-//= require turbolinks
 //= require_tree .
 
 $(document).ready(function() {

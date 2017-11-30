@@ -4,7 +4,7 @@ class ConesController < ApplicationController
   # GET /cones
   # GET /cones.json
   def index
-    @cones = Cone.all
+    @cones = current_user.links
   end
 
   # GET /cones/1
