@@ -7,9 +7,12 @@ end
 
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
-
-# Integration of RubyMoney - Money with Rails 
+# Integration of RubyMoney - Money with Rails
 gem 'money-rails'
+# Materialize Sass version for Rails Asset Pipeline
+gem 'materialize-sass'
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -57,3 +60,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+source 'http://insecure.rails-assets.org' do
+  gem 'rails-assets-jQuery-Mask-Plugin'
+end

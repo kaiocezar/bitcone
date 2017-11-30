@@ -1,0 +1,23 @@
+<ul id="slide-out" class="side-nav">
+  <li>
+    <div class="user-view">
+      <div class="background teal"></div>
+      <span class="white-text name"><i class="material-icons left">monetization_on</i> Bitcone</span>
+      <span class="white-text email"></span>
+    </div>
+  </li>
+  <li>
+    <%= link_to cones_path do %>
+        <i class="material-icons">network_wifi</i>Cones
+    <% end %>
+  </li>
+</ul>
+
+<div class="row" style="background-color: #fafafa">
+  <div class="col s1">
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+  </div>
+  <div class="col s11" id="nek-nav">
+    <%= yield :breadcrumb %>
+  </div>
+</div>
