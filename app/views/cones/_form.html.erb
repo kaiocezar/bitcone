@@ -1,0 +1,27 @@
+<%= form_with(model: cone, local: true) do |form| %>
+  <% if cone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cone.errors.count, "error") %> prohibited this cone from being saved:</h2>
+
+      <ul>
+      <% cone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :cone_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :cone_status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
