@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
+<canvas id="myCanvas" width="500" height="500" >
+Your browser does not support the HTML5 canvas tag.</canvas>
 
 <h1>Cones</h1>
 
@@ -27,3 +29,36 @@
 <br>
 
 <%= link_to 'New Cone', new_cone_path %>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(190,200,40,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(190,200,80,0,2*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(190,200,160,0,2*Math.PI);
+ctx.stroke();
+
+ctx.moveTo(187,41);
+ctx.lineTo(187,121);
+ctx.stroke();
+
+ctx.moveTo(187,280);
+ctx.lineTo(187,360);
+ctx.stroke();
+
+ctx.moveTo(30,200);
+ctx.lineTo(150,200);
+ctx.stroke();
+
+ctx.moveTo(230,200);
+ctx.lineTo(350,200);
+ctx.stroke();
+
+</script>
