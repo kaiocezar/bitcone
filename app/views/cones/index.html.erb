@@ -1,12 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Cones</h1>
+<h1>Cones Ativos</h1>
 
 <table>
   <thead>
     <tr>
       <th>Price</th>
       <th>Status</th>
+      <th>Wallet</th>
+      <th>Position</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,14 +18,9 @@
       <tr>
         <td><%= cone.price %></td>
         <td><%= cone.status %></td>
-        <td><%= link_to 'Show', cone %></td>
-        <td><%= link_to 'Edit', edit_cone_path(cone) %></td>
-        <td><%= link_to 'Destroy', cone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= cone.wallet_hash %></td>
+        <td><%= cone.position %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Cone', new_cone_path %>

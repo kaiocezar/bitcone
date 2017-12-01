@@ -13,6 +13,10 @@ gem 'money-rails'
 gem 'materialize-sass'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+gem 'rack-cors'
+# Rack middleware for blocking & throttling 
+gem 'rack-attack'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'

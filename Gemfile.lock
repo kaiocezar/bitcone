@@ -115,6 +115,9 @@ GEM
     public_suffix (3.0.1)
     puma (3.11.0)
     rack (2.0.3)
+    rack-attack (5.0.1)
+      rack
+    rack-cors (1.0.2)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.4)
@@ -211,6 +214,8 @@ DEPENDENCIES
   materialize-sass
   money-rails
   puma (~> 3.7)
+  rack-attack
+  rack-cors
   rails (~> 5.1.4)
   rails-assets-jQuery-Mask-Plugin!
   sass-rails (~> 5.0)

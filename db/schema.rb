@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20171130223206) do
   end
 
   create_table "links", force: :cascade do |t|
+    t.integer "position", null: false
     t.integer "user_id"
     t.integer "cone_id"
     t.datetime "created_at", null: false
