@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20171130223206) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "wallet_hash"
+    t.integer "balance_cents", default: 0, null: false
+    t.string "balance_currency", default: "USD", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
