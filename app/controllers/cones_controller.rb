@@ -69,6 +69,6 @@ class ConesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cone_params
-      params.require(:cone).permit(:price, :status)
+      params.require(:cone).permit(:price_cents, :status)
     end
 end
