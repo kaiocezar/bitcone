@@ -1,0 +1,8 @@
+pt-BR:
+  link:
+    app:
+      index: Bitcones
+      exit: Sair
+      withdraw: Retirar Bitcoins
+      new: 100 bits para entrar em um novo bitcone
+      hash: Minha Carteira

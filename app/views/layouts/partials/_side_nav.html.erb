@@ -1,14 +1,30 @@
 <ul id="slide-out" class="side-nav">
   <li>
     <div class="user-view">
-      <div class="background teal"></div>
+      <div class="background blue-grey darken-1"></div>
       <span class="white-text name"><i class="material-icons left">monetization_on</i> Bitcone</span>
-      <span class="white-text email"></span>
+      <span class="white-text email"><%= current_user.email %></span>
     </div>
   </li>
   <li>
     <%= link_to cones_path do %>
-        <i class="material-icons">network_wifi</i>Meus Cones
+        <i class="material-icons">network_wifi</i><%= I18n.t('link.app.index') %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to nil do %>
+        <i class="material-icons">fingerprint</i><%= I18n.t('link.app.hash') %>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to nil do %>
+        <i class="material-icons">monetization_on</i><%= I18n.t('link.app.withdraw') %>
+    <% end %>
+  </li>
+  <li><div class="divider"></div></li>
+  <li>
+    <%= link_to nil do %>
+        <i class="material-icons">exit_to_app</i><%= I18n.t('link.app.exit') %>
     <% end %>
   </li>
 </ul>
@@ -17,7 +33,10 @@
   <div class="col s1">
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
   </div>
-  <div class="col s11" id="nek-nav">
+  <div class="col s8" id="custom-nav">
     <%= yield :breadcrumb %>
+  </div>
+  <div class="col s3 right-align" style="padding-top: 12px; padding-right: 32px;">
+    <span class="flow-text">Balance: <%= "#{current_user.balance} bits" %></span>
   </div>
 </div>

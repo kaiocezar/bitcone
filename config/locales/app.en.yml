@@ -1,0 +1,8 @@
+en:
+  link:
+    app:
+      index: Bitcones
+      exit: Exit
+      withdraw: Withdraw Bitcoins
+      new: 100 bits to get in a new bitcone
+      hash: My Wallet
